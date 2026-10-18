@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "shapehud",
+  "version": "${version}",
+  "name": "ShapeHUD",
+  "description": "Move, resize, hide and group any vanilla HUD element (hotbar, hearts, hunger, XP, effects, chat, scoreboard...) with a drag-and-drop editor.",
+  "authors": ["ot_h"],
+  "contact": { "homepage": "https://modrinth.com/mod/shapehud" },
+  "license": "MIT",
+  "icon": "assets/shapehud/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.othman.shapehud.ShapeHud"],
+    "modmenu": ["com.othman.shapehud.compat.ModMenuCompat"]
+  },
+  "mixins": ["shapehud.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": { "modmenu": "*" }
+}
